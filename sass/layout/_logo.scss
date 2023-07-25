@@ -12,16 +12,17 @@
     color: var(--accent-color);
 }
 
-// .logo {
-//     margin-right: 92px;
-//     font-family: var(--logo-font);
-//     font-weight: 700;
-//     font-size: 26px;
-//     line-height: 1.19;
-//     letter-spacing: 0.03em;
-//     color: #000000;
-// }
+@media screen and (min-width: 768px) {
+    .logo {
+    margin-right: 88px;
+    }
+}
 
-// .logo__accent {
-//     color: var(--accent-color);
-// }
+@media screen and (min-width: 768px) {
+    .logo {
+        margin-right: 93px;
+        font-size: 26px;
+        letter-spacing: 0.78px;
+        color: #000000;
+    }
+}
