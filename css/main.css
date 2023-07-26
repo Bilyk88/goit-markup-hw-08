@@ -663,13 +663,13 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 32px;
+  padding: 10px 24px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.96px;
   color: #FFFFFF;
   background-color: var(--accent-color);
   border: none;
