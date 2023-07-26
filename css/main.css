@@ -88,14 +88,22 @@ img {
   }
 }
 .subtitle {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: normal;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.84px;
 }
 
+@media screen and (min-width: 1200px) {
+  .subtitle {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 1.08px;
+  }
+}
 .social-list-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -744,10 +752,6 @@ header {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg@2x.jpg");
   }
 }
-.advantages-list-item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .advantages-list-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -782,38 +786,35 @@ header {
   color: var(--secondary-text-color);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  .advantages-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
   .advantages-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: -30px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
   }
   .advantages-list-item {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
+    margin-bottom: 30px;
   }
   .advantages-subtitle {
     text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
-  .advantages-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: -30px;
-  }
   .advantages-list-item {
     -ms-flex-preferred-size: calc((100% - 120px) / 4);
         flex-basis: calc((100% - 120px) / 4);
-    margin-left: 30px;
-  }
-  .advantages-subtitle {
-    text-align: left;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -861,43 +862,33 @@ header {
   background-color: #F5F4FA;
 }
 
-.team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -30px;
-}
-
 .team-list-item {
-  -ms-flex-preferred-size: calc((100% - 120px) / 4);
-      flex-basis: calc((100% - 120px) / 4);
-  margin-left: 30px;
-  width: 270px;
   background-color: #FFFFFF;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-description {
-  padding: 30px 32px;
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 
 .team-list-title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: normal;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.48px;
 }
 
 .team-list-description {
   margin-bottom: 16px;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: normal;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.48px;
   color: var(--secondary-text-color);
 }
 
@@ -905,8 +896,42 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .team-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+  .team-list-item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list-item {
+    -ms-flex-preferred-size: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 120px) / 4);
+  }
+  .team-item-description {
+    padding: 30px 32px;
+  }
+}
 .client-list {
   display: -webkit-box;
   display: -ms-flexbox;
