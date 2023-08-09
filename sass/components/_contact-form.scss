@@ -4,6 +4,7 @@
     text-align: center;
     font-size: 20px;
     font-weight: 700;
+    line-height: 1.5;
     letter-spacing: 0.6px;
 }
 
@@ -73,7 +74,11 @@
 
     &::placeholder {
         color: rgba(117, 117, 117, 0.50);
-        font-size: 12px;
+        // для мобільних та планшеетів
+        // font-size: 14px;
+        // letter-spacing: 0.14px;
+
+        font-size: 12px; 
         letter-spacing: 0.12px;
     }
 
