@@ -206,7 +206,7 @@ img {
 
 @media screen and (max-width: 1199px) {
   .modal {
-    width: 100vw;
+    width: 90vw;
     max-width: 450px;
   }
 }
