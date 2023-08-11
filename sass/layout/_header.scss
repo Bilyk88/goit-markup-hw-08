@@ -68,8 +68,6 @@ header {
 
     .mobile-menu__container {
         position: relative;
-        // display: flex;
-        // flex-direction: column;
         padding-left: 40px;
         padding-top: 48px;
         padding-bottom: 48px;
@@ -116,7 +114,6 @@ header {
 
     .mobile-contacts {
         margin-top: 306px;
-        // margin-top: auto;
     }
 
     .mobile-contacts__item:not(:last-child) {
