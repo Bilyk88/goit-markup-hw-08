@@ -508,6 +508,9 @@ header {
   .mobile-nav__link:hover, .mobile-nav__link:focus {
     color: var(--accent-color);
   }
+  .mobile-nav__link_page_current {
+    color: var(--accent-color);
+  }
   .mobile-contacts {
     margin-top: 306px;
   }
@@ -1198,7 +1201,6 @@ header {
 }
 .footer address {
   margin-top: 28px;
-  text-align: center;
 }
 .footer .social-list-link {
   background-color: rgba(255, 255, 255, 0.1);
@@ -1353,6 +1355,9 @@ header {
   }
 }
 @media screen and (max-width: 1199px) {
+  .footer address {
+    text-align: center;
+  }
   .footer-social-text {
     text-align: center;
   }

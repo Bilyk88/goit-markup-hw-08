@@ -112,6 +112,10 @@ header {
         }
     }
 
+    .mobile-nav__link_page_current {
+        color: var(--accent-color);
+    }
+
     .mobile-contacts {
         margin-top: 306px;
     }
