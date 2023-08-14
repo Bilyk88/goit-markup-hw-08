@@ -100,6 +100,19 @@
     color: #FFFFFF;
 }
 
+@media screen and (max-width: 479px) {
+    .overlay-text {
+        padding: 24px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .button-list {
+        max-width: 350px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .button-list {
         justify-content: center;
@@ -125,16 +138,17 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .portfolio-list-item  {
-        .tablet{
-            height: 440px;
-        }
-    }
-
+    
     .portfolio-subtitle {
         max-width: 270px;
     }
 }
+
+    .portfolio-list-description {
+        &.tablet {
+                height: 146px;
+            }   
+    }
 
 @media screen and (min-width: 1200px) {
     .button-list {

@@ -1,6 +1,5 @@
     .footer-logo {
         display: block;
-        text-align: center;
         color: #FFFFFF;
     }
  
@@ -136,6 +135,10 @@
     }
 
     @media screen and (max-width: 767px) {
+        .footer-logo {
+            text-align: center;
+        }
+
         .footer-social-networks {
             padding-top: 60px;
             padding-bottom: 60px;

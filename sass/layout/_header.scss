@@ -169,3 +169,40 @@ header {
         display: none;
     }
 }
+
+@media screen and (max-width: 479px) {
+  
+    .mobile-nav__link {
+        font-size: 36px;
+    }
+
+    .mobile-contacts {
+        margin-top: 260px;
+    }
+
+    .mobile-contacts__item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .mobile-contacts__tel {
+        font-size: 28px;
+    }
+
+     .mobile-contacts__mail {
+        font-size: 20px;
+    }
+
+    .mobile-social-list {
+        margin-top: 32px;
+    }
+
+    .mobile-social-list__link {
+        font-size: 14px;
+    }
+
+    .mobile-social-list__item:not(:last-child) {
+        margin-right: 5px;
+        padding-right: 5px;
+    }
+
+}
