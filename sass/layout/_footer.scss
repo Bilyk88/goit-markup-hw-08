@@ -135,9 +135,6 @@
     }
 
     @media screen and (max-width: 767px) {
-        .footer-logo {
-            text-align: center;
-        }
 
         .footer-social-networks {
             padding-top: 60px;
@@ -146,6 +143,9 @@
     }
     
     @media screen and (max-width: 1199px) {
+        .footer-logo {
+            text-align: center;
+        }
         
         .footer address {
             text-align: center;

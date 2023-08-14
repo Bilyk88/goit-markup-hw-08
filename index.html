@@ -141,17 +141,29 @@
             <div class="container">
                 <h2 class="subtitle">Чим ми займаємося</h2>
                 <ul class="about-list list">
-                    <li class="about-list-item"><img src="./images/about-img-1.jpg" alt="Людина друкує на клавіатурі" width="370" height="294">
+                    <li class="about-list-item">
+                        <picture>
+                            <source srcset="./images/about-img-1.jpg 1x, ./images/about-img-1@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <img src="./images/about-img-1.jpg" alt="Людина друкує на клавіатурі" loading="lazy"/>
+                        </picture>
                         <div class="about-list-text-wrapper">
                             <p class="about-list-item-text">Десктопні додатки</p>
                         </div>
                     </li>
-                    <li class="about-list-item"><img src="./images/about-img-2.jpg" alt="Людина працює за ноутбуком" width="370" height="294">
+                    <li class="about-list-item">
+                        <picture>
+                            <source srcset="./images/about-img-2.jpg 1x, ./images/about-img-2@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <img src="./images/about-img-2.jpg" alt="Людина працює за ноутбуком" loading="lazy"/>
+                        </picture>
                         <div class="about-list-text-wrapper">
                             <p class="about-list-item-text">Мобільні додатки</p>
                         </div>
                     </li>
-                    <li class="about-list-item"><img src="./images/about-img-3.jpg" alt="Людина працює на планшеті" width="370" height="294">
+                    <li class="about-list-item">
+                        <picture>
+                            <source srcset="./images/about-img-3.jpg 1x, ./images/about-img-2@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <img src="./images/about-img-3.jpg" alt="Людина працює на планшеті" loading="lazy"/>
+                        </picture>
                         <div class="about-list-text-wrapper">
                             <p class="about-list-item-text">Дизайнерські рішення</p>
                         </div>
@@ -171,7 +183,7 @@
                             media="(min-width: 768px)" />
                             <source srcset="./images/team-img-1-mobile.jpg 1x, ./images/team-img-1-mobile@2x.jpg 2x"
                             media="(max-width: 767px)" />
-                            <img src="./images/team-img-1.jpg" alt="Портрет Ігора Дем'яненка" />
+                            <img src="./images/team-img-1.jpg" alt="Портрет Ігора Дем'яненка" loading="lazy" />
                         </picture>
                         <div class="team-item-description">
                             <h3 class="team-list-title">Ігор Дем'яненко</h3>
@@ -211,7 +223,7 @@
                             <source
                             srcset="./images/team-img-2-mobile.jpg 1x, ./images/team-img-2-mobile@2x.jpg 2x"
                             media="(max-width: 767px)" />
-                            <img src="./images/team-img-2.jpg" alt="Портрет Ольги Рєпіної" />
+                            <img src="./images/team-img-2.jpg" alt="Портрет Ольги Рєпіної" loading="lazy" />
                         </picture>
                         <div class="team-item-description">
                             <h3 class="team-list-title">Ольга Рєпіна</h3>
@@ -247,7 +259,7 @@
                                 media="(min-width: 768px)" />
                             <source srcset="./images/team-img-3-mobile.jpg 1x, ./images/team-img-3-mobile@2x.jpg 2x"
                                 media="(max-width: 767px)" />
-                            <img src="./images/team-img-3.jpg" alt="Портрет Миколи Тарасова" />
+                            <img src="./images/team-img-3.jpg" alt="Портрет Миколи Тарасова" loading="lazy" />
                         </picture>
                         <div class="team-item-description">
                             <h3 class="team-list-title">Микола Тарасов</h3>
@@ -283,7 +295,7 @@
                                 media="(min-width: 768px)" />
                             <source srcset="./images/team-img-4-mobile.jpg 1x, ./images/team-img-4-mobile@2x.jpg 2x"
                                 media="(max-width: 767px)" />
-                            <img src="./images/team-img-4.jpg" alt="Портрет Миколи Тарасова" />
+                            <img src="./images/team-img-4.jpg" alt="Портрет Миколи Тарасова" loading="lazy" />
                         </picture>
                         <div class="team-item-description">
                             <h3 class="team-list-title">Михайло Єрмаков</h3>
@@ -456,7 +468,9 @@
                         <span class="checkbox-icon-wrapper">
                             <svg class="checkbox-icon" width="16" height="15"></svg>
                         </span>
-                        Погоджуюся з розсилкою та приймаю&nbsp;<a href="" class="contact-form-link">Умови договору</a>
+                        <div>
+                            Погоджуюся з розсилкою та приймаю&nbsp;<a href="" class="contact-form-link">Умови договору</a>
+                        </div>
                     </label>
                 </div>
                 <button type="submit" class="contact-form-btn">Відправити</button>
