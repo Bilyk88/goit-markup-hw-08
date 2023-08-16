@@ -571,7 +571,7 @@ header {
 }
 @media screen and (max-width: 479px) {
   .mobile-nav__item:not(:last-child) {
-    margin-bottom: 18px;
+    margin-bottom: 14px;
   }
   .mobile-nav__link {
     font-size: 28px;
@@ -589,7 +589,7 @@ header {
     font-size: 14px;
   }
   .mobile-social-list {
-    margin-top: 22px;
+    margin-top: 16px;
   }
   .mobile-social-list__link {
     font-size: 14px;
@@ -1229,14 +1229,28 @@ header {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-list-item {
+    height: 440px;
+  }
+  .portfolio-list-item-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 440px;
+  }
+  .portfolio-list-description {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
   .portfolio-subtitle {
     max-width: 270px;
   }
 }
-.portfolio-list-description.tablet {
-  height: 146px;
-}
-
 @media screen and (min-width: 1200px) {
   .button-list {
     margin-bottom: 50px;

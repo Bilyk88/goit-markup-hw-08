@@ -138,17 +138,24 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    
+    .portfolio-list-item {
+        height: 440px;
+    }
+
+    .portfolio-list-item-link {
+        display: flex;
+        flex-direction: column;
+        height: 440px;
+    }
+
+    .portfolio-list-description {
+        flex-grow: 1;
+    }
+
     .portfolio-subtitle {
         max-width: 270px;
     }
 }
-
-    .portfolio-list-description {
-        &.tablet {
-            height: 146px;
-        }   
-    }
 
 @media screen and (min-width: 1200px) {
     .button-list {
